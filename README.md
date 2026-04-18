@@ -14,9 +14,16 @@ Deploy to GitHub Pages in minutes — no coding required.
 
 ## Local Development
 
+For detailed installation instructions (Git, Ruby, Jekyll, Bundler), see:
+
+- [Setup guide for Windows](docs/setup-windows.md)
+- [Setup guide for Linux / macOS](docs/setup-linux-macos.md)
+
+**If you already have Ruby and Bundler installed:**
+
 ```bash
-# Install Ruby (https://www.ruby-lang.org/en/downloads/)
-# Then:
+git clone https://github.com/ai-vnv/personal-website-template.git
+cd personal-website-template
 bundle install
 bundle exec jekyll serve
 ```
