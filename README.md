@@ -32,51 +32,18 @@ Open [http://localhost:4000](http://localhost:4000) in your browser.
 
 ## Customization
 
-Everything you need to change is in **`_config.yml`**:
+For a **complete step-by-step walkthrough** of every change you need to make, see the **[Customization Guide](docs/customization-guide.md)**.
 
-| Setting | What it does |
-|---------|-------------|
-| `title` | Site name shown in the browser tab and header |
-| `author` | Your name shown in the footer |
-| `navbar-links` | Pages in the top navigation bar |
-| `social-network-links` | Social icons shown in the footer |
-| `avatar` | Profile image in the navbar |
-| `*-col` settings | Colour scheme (navbar, footer, links, etc.) |
-| `gtag` / `gtm` | Google Analytics tracking |
-| `disqus` / `utterances` | Blog post comments |
+Quick summary — files you need to change:
 
-## Adding Content
-
-### Pages
-
-Create a new `.html` or `.md` file in the root directory with front matter:
-
-```yaml
----
-layout: page
-title: My Page
----
-
-Your content here.
-```
-
-Then add it to `navbar-links` in `_config.yml`.
-
-### Blog Posts
-
-Create files in `_posts/` with the naming format `YYYY-MM-DD-title.md`:
-
-```yaml
----
-layout: post
-title: My First Post
-subtitle: Optional subtitle
-tags: [tag1, tag2]
-comments: true
----
-
-Your post content in Markdown.
-```
+| File | What to change | Required? |
+|------|---------------|-----------|
+| `_config.yml` | Name, social links, keywords, timezone | Yes |
+| `index.html` | Homepage title, subtitle, and content | Yes |
+| `about.html` | Your bio / about text | Yes |
+| `contact.html` | Your contact details | Yes |
+| `assets/img/` | Add your profile photo | Optional |
+| `_posts/*.md` | Add blog posts | Optional |
 
 ## Features
 
