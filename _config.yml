@@ -1,0 +1,170 @@
+# =============================================================================
+# Personal Website Template — Configuration
+# =============================================================================
+# Edit the settings below to personalize your site. This is the only file
+# you *must* change to get started.
+# Based on Beautiful Jekyll v5.0.0 by Dean Attali
+# =============================================================================
+
+# --- Required options --- #
+
+# Name of website (shown in browser tab and header)
+title: "Your Name"
+
+# Your name (shown in the footer)
+author: "Your Name"
+
+# --- Navigation bar links --- #
+# Add or remove pages from the top navigation bar here.
+
+navbar-links:
+  Home: "index"
+  About: "about"
+  Contact: "contact"
+
+# --- Logo / Avatar --- #
+
+# Image to show in the navigation bar (works best with a square image)
+# avatar: "/assets/img/avatar-icon.png"
+
+# Cut the image into a circle (set to false for square)
+# round-avatar: true
+
+# Use an image logo instead of the site title
+# title-img: /path/to/image
+
+# --- Footer social media links --- #
+# Uncomment and fill in the ones you want to show in the footer.
+
+social-network-links:
+#  email: "your@email.com"
+#  github: yourusername
+#  twitter: yourusername
+#  linkedin: yourusername
+#  instagram: yourusername
+#  google-scholar: "citations?user=YOURID"
+#  orcid: "0000-0000-0000-0000"
+#  youtube: "c/yourchannel"
+#  medium: yourusername
+#  mastodon: "instance.url/@username"
+#  calendly: yourusername
+
+# Show RSS link in footer
+# rss-description: "Subscribe to my blog"
+
+# --- General options --- #
+
+# Social share buttons on blog posts
+# share-links-active:
+#   twitter: true
+#   facebook: true
+#   linkedin: true
+
+# Excerpt word length on the blog feed page
+excerpt_length: 50
+
+# Show excerpt for every blog post in the feed
+feed_show_excerpt: true
+
+# Show tags below each post preview
+feed_show_tags: true
+
+# SEO keywords for your site
+keywords: "personal website, blog"
+
+# --- Colours --- #
+# Customize the colour scheme. Any valid CSS colour works.
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+
+# Background images (instead of colours)
+# navbar-img: "/assets/img/bgimage.png"
+# footer-img: "/assets/img/bgimage.png"
+# page-img: "/assets/img/bgimage.png"
+
+# Mobile browser theme colour
+# mobile-theme-col: "#0085A1"
+
+# Extra CSS files loaded on every page
+site-css:
+  - "/assets/css/main.css"
+
+# Extra JS files loaded on every page
+site-js:
+  - "/assets/js/collapse.js"
+
+# --- Web Analytics (optional) --- #
+
+# Google Analytics gtag.js ID
+# gtag: "G-XXXXXXXXXX"
+
+# Google Tag Manager ID
+# gtm: "GTM-XXXXXXX"
+
+# Matomo / Piwik
+# matomo:
+#   site_id: "9"
+#   uri: "demo.wiki.pro"
+#   opt-out: true
+
+# --- Comments (optional) --- #
+
+# Disqus (https://disqus.com)
+# disqus: "your-shortname"
+
+# Utterances (https://utteranc.es)
+# utterances:
+#   repository: "username/repo"
+#   issue-term: title
+#   theme: github-light
+#   label: blog-comments
+
+# --- You don't need to touch anything below here (but you can if you want) --- #
+
+timezone: "America/New_York"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
+
+kramdown:
+  input: GFM
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      social-share: true
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
